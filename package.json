@@ -2,7 +2,9 @@
   "name": "4b_clone_zaparetech",
   "version": "0.1.0",
   "private": true,
-  "dependencies": { 
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
     "node-sass": "4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -11,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false && CI=false && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -1,8 +1,10 @@
+import { Header } from "./Components";
+import { Layout } from "./Utils";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Zapare Technologies</header>
-    </div>
+    <Layout>
+      <Header />
+    </Layout>
   );
 }
 
