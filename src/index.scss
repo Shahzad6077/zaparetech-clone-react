@@ -5,6 +5,11 @@
   --blue: #003a78;
   --black: #212529;
   --slate: #4b4b4b;
+
+  --minFontSize: 3px;
+  --maxFontSize: 2rem;
+  --scaler: 10vw;
+  --fluidFontSize: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
 }
 
 body {
