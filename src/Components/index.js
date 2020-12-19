@@ -1,2 +1,3 @@
 export { default as Header } from "./Header/index";
-export { default as SliderSection } from "./SliderSection/index";
+export { default as BannerSection } from "./HomeSections/Banner/index";
+export { default as AboutSection } from "./HomeSections/About/index";

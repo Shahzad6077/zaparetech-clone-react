@@ -17,6 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Open Sans", sans-serif;
+  overflow: hidden;
   overflow-y: scroll;
 }
 
@@ -52,4 +53,15 @@ body::-webkit-scrollbar-thumb {
   &:hover {
     background-color: var(--yellow);
   }
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: var(--yellow);
+}
+
+::selection {
+  color: white;
+  background: var(--yellow);
 }

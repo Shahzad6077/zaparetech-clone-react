@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { Box, Hidden } from "@material-ui/core";
 import { useControlsStyles } from "./styles";
 
-import { ReactComponent as ChevronRightIcon } from "./../../Assets/chevron-right.svg";
-import { ReactComponent as ChevronLeftIcon } from "./../../Assets/chevron-left.svg";
+import { ReactComponent as ChevronRightIcon } from "./../../../Assets/chevron-right.svg";
+import { ReactComponent as ChevronLeftIcon } from "./../../../Assets/chevron-left.svg";
 
 const SliderControls = ({ length, gotoPosition, currentPosition }) => {
   const classes = useControlsStyles();

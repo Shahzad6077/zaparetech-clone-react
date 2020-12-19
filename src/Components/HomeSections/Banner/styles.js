@@ -1,28 +1,31 @@
 import { makeStyles } from "@material-ui/core";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     margin: "1rem auto",
-    [theme.breakpoints.down("sm")]: {
-      padding: "4px 1rem",
+  },
+
+  // THIS IS Illustration Wrapper
+  leftSideClassName: {
+    display: "flex",
+    justifyContent: "center",
+    "&>div": {
+      display: "flex",
     },
-    [theme.breakpoints.up("md")]: {
-      padding: "4px 1.2rem",
-    },
-    [theme.breakpoints.up("lg")]: {
-      padding: "4px 1.5rem",
+    "& svg": {
+      maxWidth: "85%",
+      margin: "auto",
     },
   },
 
-  illustrationWrapper: {
-    // border: "1px solid",
+  // THIS IS Illustration Wrapper
+  rightSideClassName: {
     display: "flex",
-    justifyContent: "center",
-    "& svg": {
-      maxWidth: "420px",
-    },
+    alignItems: "center",
   },
-  carouselWrapper: {
-    // border: "1px solid",
+  // this is box inside side
+  rightWrapper: {
+    width: "100%",
   },
 }));
 
@@ -47,52 +50,6 @@ export const useSliderItemStyles = makeStyles((theme) => ({
       justifyContent: "start",
     },
     marginBottom: "0.5rem",
-
-    "& a": {
-      color: theme.palette.blue,
-      textDecoration: "none",
-      fontSize: "0.8rem",
-      fontWeight: 600,
-      padding: "0px 6px",
-      height: "34px",
-      [theme.breakpoints.up("md")]: {
-        fontSize: "1rem",
-      },
-      "&:hover": {
-        "& span::after": {
-          width: "100%",
-        },
-      },
-      "& span": {
-        display: "block",
-        position: "relative",
-        "&::before": {
-          content: "''",
-          display: "block",
-          position: "absolute",
-          height: "6px",
-          width: "100%",
-          backgroundColor: theme.palette.yellow,
-          transition: "all 200ms linear",
-          left: "0px",
-          right: "0px",
-          bottom: "-12px",
-        },
-        "&::after": {
-          content: "''",
-          display: "block",
-          position: "absolute",
-          height: "6px",
-          width: "0%",
-          margin: "auto",
-          backgroundColor: theme.palette.blue,
-          transition: "all 200ms linear",
-          left: "0px",
-          right: "0px",
-          bottom: "-12px",
-        },
-      },
-    },
   },
   content: {
     marginTop: "2rem",
@@ -103,21 +60,12 @@ export const useSliderItemStyles = makeStyles((theme) => ({
   content__h2: {
     color: theme.palette.blue,
     transition: "font-size 800ms ease-out",
-    [theme.breakpoints.down("xs")]: {
-      fontSize: "1rem",
-      lineHeight: "2rem",
-    },
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "1.4rem",
-      lineHeight: "2rem",
-    },
-    [theme.breakpoints.up("md")]: {
-      fontSize: "1.6rem",
-      lineHeight: "2.6rem",
+
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "calc(1.4em + 1.2vw)",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "2.4rem",
-      lineHeight: "3rem",
+      fontSize: "calc(1.2em + 2.4vw)",
     },
 
     "& span": {
@@ -137,6 +85,7 @@ export const useControlsStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     margin: "1rem 0px",
+    marginTop: "2rem",
     [theme.breakpoints.up("md")]: {
       justifyContent: "flex-end",
       marginRight: "2.5rem",

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Box, Typography } from "@material-ui/core";
 
 import { useSliderItemStyles } from "./styles";
+import { TitleBox } from "./../../../Utils";
 const SliderItem = ({ content, title }) => {
   const classes = useSliderItemStyles();
 
@@ -20,9 +21,7 @@ const SliderItem = ({ content, title }) => {
         </Typography>
       </Box>
       <Box className={classes.title}>
-        <a href="#asdf">
-          <span>{title}</span>
-        </a>
+        <TitleBox title={title} />
       </Box>
     </Box>
   );
