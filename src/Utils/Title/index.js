@@ -47,7 +47,6 @@ const Title = ({ title, className, to, justifyContent }) => {
     elem.animate([{ width }], {
       duration: 150,
     }).onfinish = () => {
-      console.log("finish");
       elem.style.width = width;
     };
   };

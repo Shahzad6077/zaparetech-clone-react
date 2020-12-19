@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
       },
       [theme.breakpoints.up("md")]: {
         marginBottom: "2.4rem",
-        textAlign: `${props.onWhichSide}`,
+        textAlign: `left`,
         fontSize: "calc(1.8em + 1.6vw)",
       },
       [theme.breakpoints.up("lg")]: {

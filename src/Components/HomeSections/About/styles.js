@@ -63,9 +63,12 @@ export const useInfoStyles = makeStyles((theme) => ({
       justifyContent: "flex-end",
 
       "& img": {
-        maxWidth: "100%",
-        top: "-75px",
+        maxWidth: "150%",
+        width: "115%",
         position: "absolute",
+        zIndex: "-1",
+        top: "-75px",
+        right: "-20%",
       },
     },
   },

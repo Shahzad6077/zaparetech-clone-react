@@ -6,7 +6,6 @@ import useStyles from "./styles";
 const AboutSection = ({ infoContent }) => {
   const classes = useStyles();
 
-  console.log(infoContent);
   return (
     <TwoSidedLayout
       classes={classes}
