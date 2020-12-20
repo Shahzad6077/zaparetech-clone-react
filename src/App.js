@@ -1,4 +1,4 @@
-import { Layout, OvalItem, TitleBox } from "./Utils";
+import { Layout } from "./Utils";
 import {
   Header,
   BannerSection,
@@ -6,6 +6,7 @@ import {
   ServicesSection,
   EnquirySection,
   AdvantagesSection,
+  HeroSection,
 } from "./Components";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutSection />
       <ServicesSection />
       <AdvantagesSection />
+      <HeroSection />
       <EnquirySection />
     </Layout>
   );
