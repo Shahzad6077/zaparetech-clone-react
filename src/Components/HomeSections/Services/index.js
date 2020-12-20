@@ -17,7 +17,7 @@ const ServicesSection = (props) => {
           title="Services."
           content="We offer customized digital services and scalable operational strategies to prepare your Organization ride through the waves of uncertainty in the form of disruptive technology and government regulations so you can deliver accelerated and cost-effective services for your consumers"
           bottomLinkTxt="Explore Services"
-          onWhichSide="right"
+          onWhichSide="left"
         />
       }
     />

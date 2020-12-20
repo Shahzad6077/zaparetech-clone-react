@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.up("md")]: {
         marginBottom: "2.4rem",
         textAlign: "left",
+        paddingRight: "16px",
       },
       [theme.breakpoints.up("lg")]: {
         fontSize: "calc(0.6em + 0.8vw)",
