@@ -8,10 +8,11 @@ const Index = ({
   RightComponent,
   leftItemProps,
   rightItemProps,
+  containerProp,
 }) => {
   return (
     <Box className={classes.root}>
-      <Grid container className={classes.container}>
+      <Grid container className={classes.container} {...containerProp}>
         {/* LEFT SIDE FOR SVG ILLUSTRATION */}
 
         <Grid item {...leftItemProps} className={classes.leftSideClassName}>
@@ -34,6 +35,7 @@ Index.propTypes = {
 
   leftItemProps: PropTypes.object,
   rightItemProps: PropTypes.object,
+  containerProp: PropTypes.object,
 };
 
 Index.defaultProps = {
@@ -45,5 +47,6 @@ Index.defaultProps = {
     xs: 12,
     md: 6,
   },
+  containerProp: {},
 };
 export default Index;

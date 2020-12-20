@@ -77,7 +77,7 @@ const ServicesItemSide = ({ ovalItemsData }) => {
     });
     return txtArr.map((o, i) => <Fragment key={i}>{o}</Fragment>);
   }, [ovalItemsData, isOvalCounterMatched]);
-  console.log(renderOvelItems);
+
   return (
     <>
       <div className={classes.shapeWrapper}>

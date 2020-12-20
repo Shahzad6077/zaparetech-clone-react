@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "calc(1.8em + 1.6vw)",
       },
       [theme.breakpoints.up("lg")]: {
-        fontSize: "calc(1.8em + 2.4vw)",
+        fontSize: "calc(1.8em + 2vw)",
       },
     },
 
