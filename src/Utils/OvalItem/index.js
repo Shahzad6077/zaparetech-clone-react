@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     border: "3px solid transparent",
     display: "flex",
     alignItems: "flex-end",
-    [theme.breakpoints.down("lg")]: {
+    [theme.breakpoints.up("md")]: {
       width: "max(190px, min(2.2vw, 220px))",
       height: "max(190px, min(2.2vw, 220px))",
     },

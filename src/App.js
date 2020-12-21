@@ -7,6 +7,7 @@ import {
   EnquirySection,
   AdvantagesSection,
   HeroSection,
+  FooterSection,
 } from "./Components";
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <AdvantagesSection />
       <HeroSection />
       <EnquirySection />
+      <FooterSection />
     </Layout>
   );
 }

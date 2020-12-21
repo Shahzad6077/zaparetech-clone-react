@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     margin: "1rem auto",
     [theme.breakpoints.up("md")]: {
-      margin: "10% 0px",
+      margin: "5% 0px",
     },
   },
 

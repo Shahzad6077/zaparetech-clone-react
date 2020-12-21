@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
   atag: {
     textDecoration: "none",
-    color: theme.palette.blue,
+    color: (props) => (props.color === "primary" ? theme.palette.blue : "#fff"),
     fontWeight: 700,
 
     display: "flex",
@@ -29,7 +29,8 @@ const useStyles = makeStyles((theme) => ({
   },
   overlay2: {
     position: "absolute",
-    backgroundColor: theme.palette.blue,
+    backgroundColor: (props) =>
+      props.color === "primary" ? theme.palette.blue : theme.palette.slate,
     height: "6px",
     marginTop: "2px",
     width: "0%",
@@ -37,8 +38,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Title = ({ title, className, to, justifyContent }) => {
-  const classes = useStyles({ justifyContent });
+const Title = ({ title, className, to, justifyContent, color }) => {
+  const classes = useStyles({ justifyContent, color });
   const overLayRef = useRef();
 
   const onAnimate = (type) => {
@@ -73,6 +74,7 @@ Title.propTypes = {
   className: PropTypes.object,
   to: PropTypes.string,
   justifyContent: PropTypes.string,
+  color: PropTypes.oneOf(["primary", "invert"]),
 };
 // Set default props
 Title.defaultProps = {
@@ -80,5 +82,6 @@ Title.defaultProps = {
   className: {},
   to: "#path",
   justifyContent: "flex-start",
+  color: "primary",
 };
 export default Title;
