@@ -125,6 +125,11 @@ const useStyles = makeStyles((theme) => ({
       display: "flex",
       justifyContent: "space-between",
     },
+    "& svg": {
+      width: "24px",
+      height: "24px",
+      fill: theme.palette.lightGrey,
+    },
   },
   divider: {
     backgroundColor: theme.palette.blue,

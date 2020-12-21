@@ -4,6 +4,7 @@ import { Container, Typography, Box, Grid } from "@material-ui/core";
 
 import { ReactComponent as LinkedinIcon } from "./../../../Assets/linkedin-in.svg";
 import { ReactComponent as FacebookIcon } from "./../../../Assets/facebook-f.svg";
+import { ReactComponent as GithubIcon } from "./../../../Assets/github.svg";
 import useStyles from "./styles";
 
 const BottomFooterSection = ({ linksTxtArray, reservedTxt, designByTxt }) => {
@@ -38,7 +39,15 @@ const BottomFooterSection = ({ linksTxtArray, reservedTxt, designByTxt }) => {
       </Grid>
       <Box className={classess.designInfoTxt}>
         <Typography variant="body1">{reservedTxt}</Typography>
-        <Typography variant="body1">{designByTxt}</Typography>
+        <Typography variant="body1">
+          <a
+            href="https://github.com/Shahzad6077"
+            target="__blank"
+            style={{ display: "flex" }}
+          >
+            Designed by: <GithubIcon style={{ marginLeft: "16px" }} />
+          </a>
+        </Typography>
       </Box>
     </Container>
   );
