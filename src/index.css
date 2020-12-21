@@ -1,4 +1,3 @@
-@import "./Assets/mediaquries.scss";
 :root {
   --yellow: #fdb811;
   --grey: #e1eefc;
@@ -38,7 +37,7 @@ code {
  */
 
 body::-webkit-scrollbar-track {
-  // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
   background-color: var(--grey);
 }
 
@@ -49,10 +48,9 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: var(--blue);
   border: 2px solid transparent;
-
-  &:hover {
-    background-color: var(--yellow);
-  }
+}
+body::-webkit-scrollbar-thumb :hover {
+  background-color: var(--yellow);
 }
 
 ::-moz-selection {
