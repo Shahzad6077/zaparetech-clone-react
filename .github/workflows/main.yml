@@ -28,12 +28,6 @@ jobs:
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
-      # Install Surge
-      - name: Rebuild node sass
-        run: npm rebuild node-sass@4.14.1 --force
-
-      - name: Isntall node sass
-        run: npm install --unsafe-perm -g node-sass@4.14.1
 
       # Runs a set of commands using the runners shell
       - uses: borales/actions-yarn@v2.0.0
