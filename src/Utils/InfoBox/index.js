@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core";
 import { Box, Typography } from "@material-ui/core";
-import { TitleBox } from "..";
+import { FadeAnimationBox, TitleBox } from "..";
 
 const useStyles = makeStyles((theme) => ({
   infoBoxWrapper: (props) => ({
@@ -67,7 +67,9 @@ const InfoBox = ({ onWhichSide, title, content, bottomLinkTxt }) => {
 
   return (
     <Box className={classes.infoBoxWrapper + " ali"}>
-      <Typography variant="h2">{title}</Typography>
+      <FadeAnimationBox animateTo="down">
+        <Typography variant="h2">{title}</Typography>
+      </FadeAnimationBox>
       <Typography variant="body1">{content}</Typography>
       <TitleBox title={bottomLinkTxt} />
     </Box>

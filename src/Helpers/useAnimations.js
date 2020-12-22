@@ -30,16 +30,16 @@ const useAnimations = () => {
         opacity: 0,
       },
       { transform: `translate${position}(0%)`, opacity: 1 },
-      {
-        transform: `translate${position}(${tranlateValueFor1stand3rd[1]})`,
-        opacity: 1,
-      },
+      // {
+      //   transform: `translate${position}(${tranlateValueFor1stand3rd[1]})`,
+      //   opacity: 1,
+      // },
       { transform: `translate${position}(0%)`, opacity: 1 },
     ];
     const timingProps = {
       duration: 1600,
-      // easing: "cubic-bezier(0.42, 0, 0.58, 1)",
-      easing: "cubic-bezier(0.81, 0.18, 0.18, 0.23)",
+      easing: "cubic-bezier(0.42, 0, 0.58, 1)",
+      // easing: "linear",
     };
     ref.animate(frames, timingProps).onfinish = (v) => {
       ref.style.opacity = 1;
