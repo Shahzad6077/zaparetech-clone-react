@@ -51,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "calc(0.9em + 0.5vw)",
       },
       [theme.breakpoints.up("md")]: {
+        lineHeight: 2,
         marginBottom: "2.4rem",
         textAlign: "left",
         paddingRight: "16px",

@@ -5,7 +5,7 @@ import { ReactComponent as TopIllustrationSvg } from "./../../../Assets/topIllus
 
 const ImgBox = () => {
   return (
-    <FadeAnimationBox animateTo="down">
+    <FadeAnimationBox animateTo="down" style={{ display: "inline-flex" }}>
       <TopIllustrationSvg />
     </FadeAnimationBox>
   );

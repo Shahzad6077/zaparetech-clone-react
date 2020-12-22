@@ -53,7 +53,6 @@ export const useInfoStyles = makeStyles((theme) => ({
   imgWrapper: {
     display: "flex",
     maxWidth: "100%",
-    height: "100%",
     justifyContent: "center",
     position: "relative",
     "& img": {
@@ -63,6 +62,7 @@ export const useInfoStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("md")]: {
       justifyContent: "flex-end",
+      height: "100%",
 
       "& img": {
         maxWidth: "150%",
