@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export default ({
+const useIntersectionObserver = ({
   root = null,
   rootMargin,
   threshold = 0,
@@ -37,5 +37,6 @@ export default ({
     return () => currentObserver.disconnect();
   }, [node]);
 
-  return [setNode, entry];
+  return [setNode, entry, node];
 };
+export default useIntersectionObserver;

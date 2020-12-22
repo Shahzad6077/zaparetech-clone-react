@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
   // this is box inside side
   rightWrapper: {
     width: "100%",
+    height: "100%",
   },
 }));
 export default useStyles;

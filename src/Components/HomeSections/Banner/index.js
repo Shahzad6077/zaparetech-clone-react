@@ -1,9 +1,9 @@
 import React from "react";
 
 import { TwoSidedLayout } from "./../../../Utils";
-import { ReactComponent as TopIllustrationSvg } from "./../../../Assets/topIllustration.svg";
 import useStyles from "./styles";
 import Slider from "./Slider";
+import ImgBox from "./ImgBox";
 
 const Index = () => {
   const classes = useStyles();
@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <TwoSidedLayout
       classes={classes}
-      LeftComponent={<TopIllustrationSvg />}
+      LeftComponent={<ImgBox />}
       RightComponent={<Slider />}
     />
   );

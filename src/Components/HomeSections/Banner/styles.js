@@ -73,6 +73,8 @@ export const useSliderItemStyles = makeStyles((theme) => ({
     },
   },
   h2_div: {
+    position: "relative",
+    overflow: "hidden",
     [theme.breakpoints.down("sm")]: {
       display: "flex",
       justifyContent: "center",

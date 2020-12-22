@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
   // this is box inside side
   rightWrapper: {
     width: "100%",
+    height: "100%",
   },
 }));
 export default useStyles;
@@ -52,6 +53,7 @@ export const useInfoStyles = makeStyles((theme) => ({
   imgWrapper: {
     display: "flex",
     maxWidth: "100%",
+    height: "100%",
     justifyContent: "center",
     position: "relative",
     "& img": {
@@ -67,7 +69,7 @@ export const useInfoStyles = makeStyles((theme) => ({
         width: "115%",
         position: "absolute",
         zIndex: "-1",
-        top: "-75px",
+        top: "180px",
         right: "-20%",
       },
     },

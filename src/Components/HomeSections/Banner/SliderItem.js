@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Box, Typography } from "@material-ui/core";
 
 import { useSliderItemStyles } from "./styles";
-import { TitleBox } from "./../../../Utils";
+import { FadeAnimationBox, TitleBox } from "./../../../Utils";
 const SliderItem = ({ content, title }) => {
   const classes = useSliderItemStyles();
 
@@ -14,7 +14,9 @@ const SliderItem = ({ content, title }) => {
           {content?.map((str, i) => {
             return (
               <div key={i} className={classes.h2_div}>
-                <span>{str}</span>
+                <FadeAnimationBox animateTo="down" config={{ isStart: true }}>
+                  <span>{str}</span>
+                </FadeAnimationBox>
               </div>
             );
           })}

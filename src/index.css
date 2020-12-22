@@ -63,3 +63,14 @@ body::-webkit-scrollbar-thumb :hover {
   color: white;
   background: var(--yellow);
 }
+
+.anim1 {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  position: relative;
+}
+.btn {
+  align-self: center;
+  padding: 6px;
+}

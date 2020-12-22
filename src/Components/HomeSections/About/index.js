@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { InfoBox, TwoSidedLayout } from "../../../Utils";
+import { FadeAnimationBox, InfoBox, TwoSidedLayout } from "../../../Utils";
 import ImageBox from "./ImageBox";
 
 import useStyles from "./styles";
@@ -10,11 +10,13 @@ const AboutSection = ({ infoContent }) => {
     <TwoSidedLayout
       classes={classes}
       LeftComponent={
-        <InfoBox
-          title="We are"
-          content={infoContent}
-          bottomLinkTxt="About Us"
-        />
+        <FadeAnimationBox animateTo="right">
+          <InfoBox
+            title="We are"
+            content={infoContent}
+            bottomLinkTxt="About Us"
+          />
+        </FadeAnimationBox>
       }
       RightComponent={<ImageBox />}
     />

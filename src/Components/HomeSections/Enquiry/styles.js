@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
 
   leftWrapper: {
     width: "100%",
+    height: "100%",
 
     [theme.breakpoints.down("sm")]: {
       padding: "0px 16px",

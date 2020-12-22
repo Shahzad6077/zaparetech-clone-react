@@ -9,6 +9,7 @@ import {
   HeroSection,
   FooterSection,
 } from "./Components";
+
 function App() {
   return (
     <Layout>
