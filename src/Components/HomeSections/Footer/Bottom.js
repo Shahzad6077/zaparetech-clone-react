@@ -45,7 +45,7 @@ const BottomFooterSection = ({ linksTxtArray, reservedTxt, designByTxt }) => {
             target="__blank"
             style={{ display: "flex" }}
           >
-            Designed by: <GithubIcon style={{ marginLeft: "16px" }} />
+            Cloned by: <GithubIcon style={{ marginLeft: "16px" }} />
           </a>
         </Typography>
       </Box>
